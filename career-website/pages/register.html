@@ -2,41 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="../css/mystyles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link rel="stylesheet" href="../css/mystyles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+</nav>
 
-    <h1>Register</h1>
-    <form onsubmit="return registrationSuccess()">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br>
+<h1>Register</h1>
+<form onsubmit="return registrationSuccess()">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br>
 
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required><br>
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br>
 
-        <button type="submit">Register</button>
-    </form>
+<button type="submit">Register</button>
+</form>
 
-    <script>
-        function registrationSuccess() {
-            alert("Registration successful!");
-            return false;
-        }
-    </script>
+<script>
+function registrationSuccess() {
+alert("Registration successful!");
+return false;
+}
+</script>
 </body>
 </html>

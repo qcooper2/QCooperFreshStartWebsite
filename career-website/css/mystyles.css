@@ -1,94 +1,178 @@
-/* Reset default spacing */
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-}
-
-/* NAVIGATION BAR */
-.navbar {
-list-style-type: none;
+/* RESET */
+* {
 margin: 0;
 padding: 0;
-background-color: #333;
+box-sizing: border-box;
+}
+
+/* BODY */
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f4f8fc;
+color: #333;
+}
+
+/* NAVBAR */
+nav {
+background-color: #0a3d62;
+padding: 15px;
+}
+
+nav ul {
+list-style: none;
 display: flex;
 justify-content: center;
 }
 
-/* Main menu items */
-.navbar li {
+nav ul li {
 position: relative;
+margin: 0 15px;
 }
 
-/* Links */
-.navbar li a {
-display: block;
+/* LINKS */
+nav ul li a {
 color: white;
-padding: 14px 16px;
 text-decoration: none;
+font-weight: bold;
+padding: 10px;
+display: block;
 }
 
-/* Hover effect */
-.navbar li a:hover {
-background-color: #111;
-}
-
-/* DROPDOWN MENU */
-.dropdown-content {
+/* DROPDOWN FIX */
+nav ul li ul {
 display: none;
 position: absolute;
-background-color: #444;
-min-width: 180px;
-top: 100%;
+background-color: #0a3d62;
+top: 100%;   /* key fix */
 left: 0;
+min-width: 180px;
 z-index: 1000;
 }
 
-/* Dropdown links */
-.dropdown-content li {
+/* KEEP DROPDOWN OPEN */
+nav ul li:hover > ul {
 display: block;
 }
-.dropdown-content li a {
-padding: 12px;
-text-align: left;
+
+/* SUBMENU ITEMS */
+nav ul li ul li {
+margin: 0;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+nav ul li ul li a {
+padding: 10px;
 }
 
-/* HEADER SECTION */
+/* HOVER EFFECT */
+nav ul li ul li a:hover {
+background-color: #07406b;
+}
+
+/* HEADER */
 header {
 text-align: center;
-background-color: #f4f4f4;
-padding: 30px;
+padding: 40px;
+background-color: #dff1ff;
 }
 
-/* MAIN CONTENT */
-main {
-padding: 20px;
-text-align: center;
+header h1 {
+color: #0a3d62;
 }
 
-/*FORMS (Login/Register/Contact)*/
-form {
-margin-top: 20px;
+/* CONTENT */
+.container {
+padding: 40px;
+max-width: 1000px;
+margin: auto;
 }
 
-input, textarea {
-width: 250px;
-padding: 8px;
-margin: 8px 0;
+h2 {
+color: #0a3d62;
+margin-bottom: 15px;
 }
 
+/* BUTTONS */
 button {
-padding: 10px 15px;
-background-color: #333;
+background-color: #0a3d62;
 color: white;
 border: none;
+padding: 10px 20px;
 cursor: pointer;
 }
 
 button:hover {
-background-color: #555;
+background-color: #07406b;
+}
+
+/* FORMS */
+form {
+max-width: 400px;
+margin: auto;
+}
+
+input, select {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+text-align: center;
+padding: 20px;
+background-color: #0a3d62;
+color: white;
+margin-top: 40px;
+}
+
+/* CENTER IMAGE */
+.center-content {
+text-align: center;
+margin: 20px 0;
+}
+
+.center-content img {
+width: 60%;
+max-width: 500px;
+border-radius: 10px;
+}
+
+/* CENTER TEXT */
+.center-text {
+text-align: center;
+margin: 15px 0;
+}
+
+/* CENTER LIST */
+.center-list {
+text-align: center;
+list-style-position: inside;
+}
+
+body {
+font-size: 18px;   /* increases overall readability */
+line-height: 1.6;  /* improves spacing between lines */
+}
+
+/* Headings scale nicely */
+h1 {
+font-size: 32px;
+}
+
+h2 {
+font-size: 26px;
+}
+
+h3 {
+font-size: 22px;
+}
+
+/* GLOBAL IMAGE SIZE (ALL PAGES) */
+.container img {
+width: 40%;
+max-width: px;400
+height: auto;
+display: block;
+margin: 20px auto;
+border-radius: 10px;
 }
